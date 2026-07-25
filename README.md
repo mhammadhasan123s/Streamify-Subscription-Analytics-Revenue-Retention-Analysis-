@@ -1,4 +1,4 @@
-# Streamify — Subscription Revenue & Retention Analysis
+# Streamify Subscription Revenue & Retention Analysis
 
 > **Course:** STQD6134 — Business Analytics
 > **Assessment:** Video Presentation (20%)
