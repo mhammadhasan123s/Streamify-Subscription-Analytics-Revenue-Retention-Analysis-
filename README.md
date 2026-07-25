@@ -92,22 +92,6 @@ stqd6134-streamify-analytics/
 
 ---
 
-## Fixes Applied to Original Script
-
-| # | Issue | Fix |
-|---|---|---|
-| 1 | `ifelse()` strips Date class from `CancelDate` → stored as integer | Wrapped in `as.Date(..., origin="1970-01-01")` |
-| 2 | `TotalStreams` can go negative (`rnorm`) | Added `pmax(..., 5)` to clamp minimum to 5 |
-| 3 | `MonthJoined` as factor → months could reorder in plots | Used `month()` (integer 1–12) + `month.abb` labels |
-| 4 | No engagement breakdown by plan/device (assignment requirement) | Added `engagement_by_plan` and `engagement_by_device` tables |
-| 5 | No revenue % share per plan/region | Added `Share_pct` column to both summary tables |
-| 6 | `install.packages()` would be called on every run | Replaced with safe `if (!requireNamespace(...))` pattern |
-| 7 | No data export step | Added `write.csv(stream_data, "streamify_data.csv")` |
-| 8 | Bar charts had no value labels | Added `geom_text()` with dollar amounts + percentages |
-| 9 | **questions.docx states churn = 67.4%** — WRONG | Simulation uses `prob=0.3` → churn should be ~30%; corrected in insights |
-
----
-
 ## How to Run
 
 ```r
