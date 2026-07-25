@@ -1,6 +1,6 @@
 # Streamify Subscription Revenue & Retention Analysis
 
-> **Course:** STQD6134 — Business Analytics
+> **Course:** STQD6134 - Business Analytics
 > **Assessment:** Video Presentation (20%)
 > **Institution:** Universiti Kebangsaan Malaysia (UKM)
 > **Scenario:** Business Analyst at Streamify, a digital streaming platform
